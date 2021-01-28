@@ -3,8 +3,7 @@ const Sequelize = require("sequelize");
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
-const db = process.env.DATABASE_URL;
-const sequelize = new Sequelize(db);
+const sequelize = new Sequelize('postgres://vbbgvldluphduq:e97b2f2dd12306ac327274f3164a4c8394eef89e11500850c417f98f8ea098f7@ec2-52-44-46-66.compute-1.amazonaws.com:5432/d8tl0oip7rspjp')
 sequelize
   .authenticate()
   .then(() => {
