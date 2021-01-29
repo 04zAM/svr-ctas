@@ -1,0 +1,8 @@
+{
+  "name": "Gestion de Usuarios",
+  "description": "Modulo de gestion de usuarios",
+  "repository": "https://git.heroku.com/svr-bancos.git",
+  "logo": "https://cdn.rawgit.com/heroku/svr-bancos/main/public/node.svg",
+  "keywords": ["users", "usuarios", "gestion","module"],
+  "image": "heroku/nodejs"
+}
