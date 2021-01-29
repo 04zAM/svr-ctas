@@ -14,8 +14,8 @@ sequelize
   });
 
 //Model
-const Cta = sequelize.define(
-  "ctas",
+const User = sequelize.define(
+  "user",
   {
     // attributes
     firstName: {
