@@ -1,5 +1,4 @@
 const express = require("express");
-const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 5000;
 const { Pool } = require("pg");
@@ -10,7 +9,7 @@ const pool = new Pool({
   },
 });
 
-app
+express()
   .use(express.json())
   .use(express.static(path.join(__dirname, "public")))
   .set("views", path.join(__dirname, "views"))
